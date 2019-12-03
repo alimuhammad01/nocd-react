@@ -7,7 +7,7 @@ import FeedBackForm from './components/user feedback/FeedBackForm';
 function App() {
   return (
     <div className="formFeedBack_wrap">
-      <header><img src={back} /></header>
+      <header><img alt="back" src={back} onClick={() => alert('back')} /></header>
 
       <FeedBackForm />
     </div>

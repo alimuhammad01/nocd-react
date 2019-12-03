@@ -48,7 +48,7 @@ export default function FeedBackForm() {
             <h3 className="title"> Send us your question and we’ll put you in touch with our team.</h3>
             <p className="detail"> We’ll also help you learn about the most effective ways to deal with unwanted thoughts and repetitive behaviors. </p>
             <textarea name="question" type="text" value={question} className="input-question" placeholder="Ask you question here" onChange={onTextChange} />
-            <label for="question" />
+            <label htmlFor="question" />
             <div className="checkBox-row">
                 <input onChange={() => setLocation(!location)} checked={location} type="checkbox" id="checkbox1" />
                 <label htmlFor="checkbox1"></label>
@@ -59,7 +59,7 @@ export default function FeedBackForm() {
             <p className="availability"> *Currently available only in these states due to clinician licensure</p>
             <div className="checkBox-row">
                 <input onChange={() => setAge(!age)} checked={age} type="checkbox" id="checkboxAge" />
-                <label for="checkboxAge"></label>
+                <label htmlFor="checkboxAge"></label>
                 <p>
                     I’m 18 years old or above
                 </p>
@@ -68,7 +68,7 @@ export default function FeedBackForm() {
             <input onClick={() => onFormSubmit()} className="submitBtn" type="submit" disabled={(question.length < 1) || !age || !location} />
 
             <footer className="feedBack_footer">
-                <img src={bottom_flowers} />
+                <img alt="flower" src={bottom_flowers} />
             </footer>
         </div>
     )

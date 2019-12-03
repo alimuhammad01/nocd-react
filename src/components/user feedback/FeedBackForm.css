@@ -107,6 +107,12 @@
 
     cursor: pointer;
 }
+.feedBackForm .submitBtn:disabled
+{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
 
 .feedBack_footer {
     position: absolute;
