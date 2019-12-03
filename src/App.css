@@ -1,22 +1,17 @@
-.App {
-  text-align: center;
+/*--- Dev CSS Start ---*/
+.formFeedBack_wrap {
+  width: 378px;
+  height: 667px;
+  margin: 0 auto;
+  background: #E4F1EE;
+  padding: 30px 30px;
+  position: relative;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+@media  (max-width: 1366px) {
+  .formFeedBack_wrap {
+    height: 100vh;
+    width: 100%;
+  }
 }
